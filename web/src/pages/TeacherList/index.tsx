@@ -1,13 +1,15 @@
-import React from 'react';
+import React from 'react'
 
-import Header from '../../components/Header';
+import Header from '../../components/Header'
 
-import './styles.css';
+import './styles.css'
 
-function TeacherList() {
-    return(
-        <Header />
-    );
+function TeacherList () {
+  return (
+    <div id="page-teacher-list" className="container">
+      <Header />
+    </div>
+  )
 }
 
-export default TeacherList;
+export default TeacherList

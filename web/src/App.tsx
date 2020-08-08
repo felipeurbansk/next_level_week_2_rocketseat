@@ -1,15 +1,13 @@
-import React from 'react';
+import React from 'react'
 
 import './assets/css/global.css'
 
-import Landing from './pages/Landing'
+import Routes from './routes'
 
-function App() {
+function App () {
   return (
-    <div className="App">
-      <Landing/>
-    </div>
-  );
+    <Routes />
+  )
 }
 
-export default App;
+export default App

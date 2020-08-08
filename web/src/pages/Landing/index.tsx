@@ -1,11 +1,14 @@
 import React from 'react';
 
 import logoImg from '../../assets/images/logo.svg';
-import landingImg from '../../assets/images/give-classes.svg';
+import landingImg from '../../assets/images/landing.svg';
 
 
 import studyIcon from '../../assets/images/icons/study.svg';
 import givenClassesIcon from '../../assets/images/icons/give-classes.svg';
+import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg';
+
+import './styles.css';
 
 function Landing() {
     return (
@@ -22,10 +25,21 @@ function Landing() {
                     className="hero-image"/>
 
                 <div className="buttons-container">
-                    <a href="" className="study">
+                    <a href="/teste" className="study">
+                        <img src={studyIcon} alt="Vamos estudar"/>
+                        Estudar
+                    </a>
 
+                    <a href="/teste" className="give-classes">
+                        <img src={givenClassesIcon} alt="Vamos estudar"/>
+                        Estudar
                     </a>
                 </div>
+                
+                <span className="total-connections">
+                    Total de 200 conexões já realizadas <img src={purpleHeartIcon} alt="Conexões realizadas"/>
+                </span>
+                
             </div>
         </div>
     );

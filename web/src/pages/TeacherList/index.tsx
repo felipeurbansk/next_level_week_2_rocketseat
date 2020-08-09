@@ -4,10 +4,25 @@ import Header from '../../components/Header'
 
 import './styles.css'
 
-function TeacherList () {
+const TeacherList = () => {
   return (
     <div id="page-teacher-list" className="container">
-      <Header />
+      <Header title="Estes são os proffys disponiveis.">
+        <form id="search-teachers">
+          <div className="input-block">
+            <label htmlFor="subject">Matéria</label>
+            <input type="text" id="subject"/>
+          </div>
+          <div className="input-block">
+            <label htmlFor="week-day">Dia da semana</label>
+            <input type="text" id="week-day"/>
+          </div>
+          <div className="input-block">
+            <label htmlFor="hours">Hora</label>
+            <input type="text" id="hours"/>
+          </div>
+        </form>
+      </Header>
     </div>
   )
 }

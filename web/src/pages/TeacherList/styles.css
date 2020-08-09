@@ -50,6 +50,11 @@
     margin-bottom: 2.8rem;
 }
 
+#page-teacher-list main {
+    margin: 3.2rem auto;
+    width: 90%;
+}
+
 
 @media (min-width: 700px) {
     #page-teacher-list {
@@ -61,11 +66,22 @@
         grid-template-columns: repeat(3, 1fr);
         column-gap: 16px;
         position: absolute;
-        bottom: -20px;
+        bottom: -5.8rem;
     }
 
     #search-teachers .input-block + .input-block {
         margin: 0;
+    }
+
+    #page-teacher-list main {
+        padding: 6rem 0;
+        max-width: 740px;
+        margin: 0 auto;
+    }
+
+    #page-teacher-list header,
+    #page-teacher-list footer {
+        padding: 3.2rem;
     }
     
 }
